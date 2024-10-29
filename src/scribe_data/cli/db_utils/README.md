@@ -21,9 +21,7 @@ Usage
 Command-Line Interface
 The tool can be used from the command line, where you can specify the source and target languages, along with the phrase you want to translate.
 
-Command Syntax
-bash
-Copy code
+
 python3 /path/to/main.py translate -s <source_language> -t <target_language> -- "<phrase>"
 Parameters
 -s <source_language>: Specify the source language (e.g., en for English).
@@ -32,13 +30,11 @@ Parameters
 Example Usage
 To translate the word "eat" from English to Spanish:
 
-bash
-Copy code
+
 python3 /path/to/main.py translate -s en -t es -- "eat"
 To translate the phrase "day check up" from English to Spanish:
 
-bash
-Copy code
+
 python3 /path/to/main.py translate -s en -t es -- "day check up"
 Notes
 Ensure you have an active internet connection, as the tool fetches data from the Wikidata SPARQL API.
@@ -51,13 +47,13 @@ Connection issues: Check your internet connection if the tool cannot fetch trans
 Example Output
 For the command:
 
-bash
-Copy code
+
+
 python3 /path/to/main.py translate -s en -t es -- "day check up"
 The output may look like:
 
-arduino
-Copy code
+
+
 Translating word: 'day'
 Translation: {'day': {'fr': 'jour', 'de': 'Tag', 'es': 'día', 'pt': 'dia'}}
 Translating word: 'check'
